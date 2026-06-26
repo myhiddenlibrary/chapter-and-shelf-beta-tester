@@ -114,9 +114,26 @@
     .holo-toggle-btn { flex: 1; padding: 7px; border: 1px solid #e8d8cc; border-radius: 8px; font-size: 11px; font-weight: 500; cursor: pointer; background: #f9f5f2; color: #888; font-family: 'Plus Jakarta Sans', sans-serif; }
     .holo-toggle-btn.active { background: var(--accent); color: white; border-color: var(--accent); }
     
-.switch-btn { width: 100%; padding: 11px; background: transparent; color: var(--accent); border: 1.5px solid var(--accent); border-radius: 10px; font-size: 13px; font-weight: 600; cursor: pointer; font-family: 'Plus Jakarta Sans', sans-serif; text-align: center; text-decoration: none; display: block; transition: all 0.2s; margin-bottom: 10px; }
-.switch-btn:hover { background: var(--accent-light); color: var(--accent); }
-  </style>
+  .switch-btn { 
+  width: 100%; 
+  padding: 11px; 
+  background: var(--accent); 
+  color: white; 
+  border: none; 
+  border-radius: 10px; 
+  font-size: 13px; 
+  font-weight: 600; 
+  cursor: pointer; 
+  font-family: 'Plus Jakarta Sans', sans-serif; 
+  text-align: center; 
+  text-decoration: none; 
+  display: block; 
+  transition: all 0.2s; 
+  margin-bottom: 10px; 
+}
+.switch-btn:hover { 
+  opacity: 0.9; 
+}</style>
 </head>
 <body>
 
@@ -158,7 +175,7 @@
         <button class="holo-toggle-btn active" id="btn-holo-off" onclick="setHolo(false)">Off</button>
       </div>
     </div>
-    <a href="bookcard-sweet.html" class="switch-btn">↔ Switch to Front Cover</a>
+    <a href="bookcard-sweet.html" class="switch-btn">Front Cover</a>
     <button class="download-btn" id="dl-btn" onclick="downloadCard()">⬇ Download Back Cover PNG</button>
   </div>
 
